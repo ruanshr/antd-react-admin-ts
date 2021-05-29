@@ -4,15 +4,22 @@ const {
   disableEsLint,
   addWebpackAlias,
   overrideDevServer,
+  addWebpackPlugins,
+  fixBabelImports,
   watchAll,
+  ...args
 } = require("customize-cra");
 
 module.exports = {
   webpack: override(
+    fixBabelImports("import",{
+        "libraryName":"antd",
+        "libraryDirectory": "es",
+        "style":"css",
+    }),
     // usual webpack plugin
     addWebpackAlias({
-      /*eslint no-useless-computed-key: */
-      ["@"]: path.resolve(__dirname, "src"),
+      ["@/*"]: path.resolve(__dirname, "src"),
     }),
     disableEsLint()
   ),
