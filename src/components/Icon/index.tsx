@@ -10,9 +10,7 @@ type PickProps<T> = T extends (props: infer P1) => any
 
 type AllKeys = keyof typeof AllIcons;
 //  获取大写开头的导出们, 认为是组件
-type PickCapitalizeAsComp<K extends AllKeys> = K extends Capitalize<K>
-  ? K
-  : never;
+type PickCapitalizeAsComp<K extends AllKeys> = K extends Capitalize<K> ? K : never;
 // ------------------------------------------------^ typescript 4.1+ --------
 type IconNames = PickCapitalizeAsComp<AllKeys>;
 // 没有 4.1 的可以手动排除 小写开头的方法们
@@ -21,9 +19,7 @@ type IconNames = PickCapitalizeAsComp<AllKeys>;
 //   "createFromIconfontCN" | "default" | "getTwoToneColor" | "setTwoToneColor"
 // >;
 
-export type PickIconPropsOf<K extends IconNames> = PickProps<
-  typeof AllIcons[K]
->;
+export type PickIconPropsOf<K extends IconNames> = PickProps<typeof AllIcons[K]>;
 
 // 这里将不再能用 FC 来包裹
 // const Icon = <T extends IconNames, P extends Object = PickIconPropsOf<T>>({
@@ -41,8 +37,8 @@ export type PickIconPropsOf<K extends IconNames> = PickProps<
 const Icon = ({ type, ...props }: IconComponentProps) => {
   const iconNames: any[] = Object.keys(AllIcons);
   if (!iconNames.includes(type)) {
-    if(props.component) {
-      return React.createElement(props.component)
+    if (props.component) {
+      return React.createElement(props.component);
     }
     // 这个是记录哪个写错了
     console.log(type);

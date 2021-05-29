@@ -1,5 +1,5 @@
 import { Layout, Divider } from "antd";
-import CustomBreadcrumb from "../../components/CustomBreadcrumb";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
 
 const AboutView = () => (
   <Layout>

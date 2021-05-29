@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Layout, Row, Col, Upload, message, Button, Divider, Modal } from "antd";
-import Icon from "../../../components/Icon";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
+import Icon from "@/components/Icon";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
 import { UploadFile } from "antd/lib/upload/interface";
 
 const { Dragger } = Upload;

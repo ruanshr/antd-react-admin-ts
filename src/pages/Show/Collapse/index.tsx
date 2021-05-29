@@ -1,8 +1,8 @@
 import React from "react";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
 import { Layout, Divider, Row, Col, Collapse } from "antd";
 
-import Icon from "../../../components/Icon";
+import Icon from "@/components/Icon";
 
 const { Panel } = Collapse;
 

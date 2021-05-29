@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Layout, Row, Col, Divider } from "antd";
-import Icon from "../../components/Icon";
+import Icon from "@/components/Icon";
 import screenfull from "screenfull";
 import "src/styles/view-style/index.scss";
 

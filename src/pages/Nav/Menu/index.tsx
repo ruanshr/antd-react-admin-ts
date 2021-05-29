@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Layout, Divider, Row, Col, Menu, Button, Switch, MenuTheme } from "antd";
-import Icon from "../../../components/Icon";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
+import Icon from "@/components/Icon";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
 import { MenuMode } from "antd/lib/menu";
 
 const { SubMenu } = Menu;

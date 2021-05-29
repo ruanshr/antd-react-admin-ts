@@ -1,8 +1,8 @@
 import React from "react";
 import { Layout, Divider, Menu, Dropdown, Row, Col, message, Button } from "antd";
-import Icon from "../../../components/Icon";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
-import "../../../styles/view-style/dropdown.scss";
+import Icon from "@/components/Icon";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
+import "@/styles/view-style/dropdown.scss";
 
 const { SubMenu } = Menu;
 

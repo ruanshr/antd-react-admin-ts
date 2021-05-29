@@ -1,11 +1,11 @@
 import React from "react";
-import "../../styles/view-style/login.scss";
+import "@/styles/view-style/login.scss";
 import { Layout, Input, Form, Button, Divider, message, notification } from "antd";
-import Icon from "../../components/Icon";
+import Icon from "@/components/Icon";
 import { withRouter } from "react-router-dom";
 // import axios from '@/api'
 // import { API } from '@/api/config'
-import "../../styles/view-style/login.scss";
+import "@/styles/view-style/login.scss";
 
 const Login = (props: any) => {
   const [form] = Form.useForm<any>();

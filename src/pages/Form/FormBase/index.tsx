@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
 import {
   Alert,
   Layout,
@@ -22,8 +22,8 @@ import {
   AutoComplete,
   message,
 } from "antd";
-import Icon from "../../../components/Icon";
-import "../../../styles/view-style/form.scss";
+import Icon from "@/components/Icon";
+import "@/styles/view-style/form.scss";
 
 const { Option } = Select;
 

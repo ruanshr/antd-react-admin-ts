@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
 import { Layout, Row, Col, Progress, Divider, Button } from "antd";
 
-import Icon from "../../../components/Icon";
-import "../../../styles/view-style/progress.scss";
+import Icon from "@/components/Icon";
+import "@/styles/view-style/progress.scss";
 
 const ButtonGroup = Button.Group;
 

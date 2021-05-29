@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
 import { Layout, Divider, Row, Col, Tree, Input } from "antd";
-import Icon from "../../../components/Icon";
+import Icon from "@/components/Icon";
 
 const { TreeNode } = Tree;
 

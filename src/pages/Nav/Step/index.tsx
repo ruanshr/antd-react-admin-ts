@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Layout, Divider, Row, Col, Steps, Button, message } from "antd";
-import Icon from "../../../components/Icon";
-import CustomBreadcrumb from "../../../components/CustomBreadcrumb";
-import "../../../styles/view-style/step.scss";
+import Icon from "@/components/Icon";
+import CustomBreadcrumb from "@/components/CustomBreadcrumb";
+import "@/styles/view-style/step.scss";
 
 const { Step } = Steps;
 

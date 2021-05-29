@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Menu } from "antd";
-import Icon from "../../components/Icon";
+import Icon from "@/components/Icon";
 import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 
 interface ICustomMenuProps extends RouteComponentProps {
